@@ -1,7 +1,8 @@
 (ns bb.config)
 
 (defn config
+  "Default configuration."
   []
-  {:db {:host "localhost"
-        :port  7474
-        :path "db/data/"}})
+  (delay {:db {:host "localhost"
+               :port  7474
+               :path "db/data/"}}))
